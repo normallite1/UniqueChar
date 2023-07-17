@@ -24,7 +24,7 @@ public class Main {
         }
         return findFirstNonRepeatedChar(String.valueOf(uniqueChar));
     }
-    static public char findFirstNonRepeatedChar(String word) {
+    static public Character findFirstNonRepeatedChar(String word) {
         Map<Character, Integer> charFrequencyMap = new HashMap<>();
         for (char c : word.toCharArray()) {
             charFrequencyMap.put(c, charFrequencyMap.getOrDefault(c, 0) + 1);
